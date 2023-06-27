@@ -1,0 +1,34 @@
+<!-- Задание 7*
+Задача: перепишите код, используя
+конструкцию switch-case ,
+запрашивая возраст пользователя
+через диалоговое окно. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  ,<script>
+    let age = parseInt(prompt('Введите возраст'));
+
+    switch (age) { <!--`switch/case лучше использовать когда идёт проверка на конкретный случай, в случае диапазона используется if/else`-->
+      case 18:
+        alert('Вы совершеннослетний, всё можно!');
+        break;
+      case 10:
+        alert('Вам нужно учить уроки!');
+        break;
+      case 30:
+        alert('Ложитесь спать, завтра нa работу');
+        break;
+      default:
+        alert('Мы не знаем что Вам делать');
+        break;
+    }
+  </script>
+</body>
+</html>
